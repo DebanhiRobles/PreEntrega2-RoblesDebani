@@ -1,0 +1,470 @@
+/* tipografias importadas */
+
+@font-face {
+    font-family: 'Playfair-Dispair';
+    src: url('../Recursos/typos/PlayfairDisplay-Italic-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'worksans-regular';
+    src: url(../Recursos/typos/WorkSans-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'worksans-light';
+    src: url(../Recursos/typos/WorkSans-Light.ttf);
+}
+
+/* Reseteo */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Barra de menu/navegacion */
+
+header {
+    background-color: #FBF2DF;
+    height: 150px;
+
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo_principal {
+    width: 100px;
+    margin: 40px;
+}
+
+
+nav ul {
+    color: darkblue;
+    font-family: Helvetica, sans-serif;
+    text-align: right;
+    font-family: 'worksans-light';
+    margin: 20px;
+    padding: 20px;
+
+    ;
+}
+
+nav ul li {
+    display: inline;
+}
+
+
+/* titulos  y contenido */
+h1 {
+    color: black;
+    font-family: 'playfair-dispair';
+    text-align: center;
+}
+
+h2 {
+    color: black;
+    font-family: 'worksans-regular';
+    text-align: center;
+}
+
+h3 {
+    color: black;
+    font-family: 'worksans-regular';
+    text-align: left;
+}
+
+p {
+    font-family: 'worksans-light';
+    text-align: justify;
+}
+
+.volver-a {
+    font-family: 'worksans-light';
+}
+
+.ver-trailer {
+    font-family: 'worksans-light';
+}
+
+hr {
+    color: black;
+}
+
+
+
+/* Flex para primera sección del index*/
+
+.presentacion {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.presentacion img {
+    width: 600px;
+    padding: 15px;
+}
+
+.frase_homepage {
+    max-width: 400px;
+}
+
+/* Estilos en el index */
+
+.main-index {
+    background-color: rgb(249, 244, 236);
+    margin: 0;
+}
+
+.Descripcion-pelicula {
+    color: black;
+    padding: 5px;
+}
+
+.Descripcion-serie {
+    color: black;
+    padding: 5px;
+}
+
+.negrita {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* tamaño de imagenes en index */
+
+.imagenes_index {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.imagenes_index img {
+    width: 500px;
+    padding: 20px;
+}
+
+/* Estilos de Grid en el Index */
+
+.grid-galeria {
+    display: grid;
+    grid-template-columns: repeat(2, 600px);
+    grid-template-rows: 100px 400px 400px 400px;
+    padding: 25px;
+
+    /* template // platilla */
+    grid-template-areas:
+        "primera primera"
+        "segunda tercera"
+        "cuarta quinta"
+        "sexta quinta"
+
+
+}
+
+.primera {
+    background-color: rgb(249, 244, 236);
+    grid-area: primera;
+    font-family: "Playfair-Dispair";
+    text-align: center;
+    font-size: 30px;
+
+}
+
+.segunda {
+    background-color: orange;
+    grid-area: segunda;
+}
+
+.segunda img {
+    width: 600px;
+    height: 400px;
+}
+
+.tercera {
+    background-color: yellow;
+    grid-area: tercera;
+    overflow: hidden;
+}
+
+.tercera img {
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.cuarta {
+    background-color: greenyellow;
+    grid-area: cuarta;
+    overflow: hidden;
+}
+
+.cuarta img {
+    width: 600px;
+    height: 400px;
+}
+
+.quinta {
+    background-color: lightskyblue;
+    grid-area: quinta;
+    overflow: hidden;
+    align-items: center;
+}
+
+.quinta img {
+    width: 600px;
+    height: 800px;
+}
+
+.sexta {
+    background-color: violet;
+    grid-area: sexta;
+    overflow: hidden;
+}
+
+.sexta img {
+    width: 600px;
+    height: 400px;
+    align-items: center;
+}
+
+/* estilos del footer */
+footer {
+    background-color: #F7F5E7;
+    margin: 0%;
+    text-align: center;
+    font-family: 'worksans-light';
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+footer ul li {
+    display: inline;
+}
+
+
+.logo_footer {
+    width: 100px;
+}
+
+
+/* Estilos en Pagina Peliculas */
+.peliculas-entradas {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 30px;
+}
+
+.peliculas-entradas iframe {
+    padding: 20px;
+}
+
+/* Estilos en Pagina Series */
+.series-entradas {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 30px;
+}
+
+.series-entradas iframe {
+    padding: 20px;
+}
+
+
+/* Estilos en Pagina Cortos */
+.cortos-entradas {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 30px;
+}
+
+.titulo-es-broma {
+    text-align: center;
+    font-size: small;
+    font-weight: lighter;
+}
+
+
+/* Estilos en contactanos */
+.contacto-entradas {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px;
+}
+
+form input {
+    padding: 10px;
+    margin: 10px;
+}
+
+.coment-robot {
+    text-align: center;
+    font-size: small;
+    font-weight: lighter;
+}
+
+
+/* ESTRATEGIA MOBILE LAST */
+
+@media (max-width:860px) {
+    .presentacion img {
+        width: 350px;
+        padding: 15px;
+    }
+
+    .grid-galeria {
+
+        display: grid;
+        grid-template-columns: repeat(2, 300px);
+        grid-template-rows: 50px 200px 200px 200px;
+        padding: 20px;
+        justify-content: center;
+    }
+
+    .segunda img {
+        width: 300px;
+        height: 200px;
+    }
+
+    .tercera img {
+        width: 300px;
+        height: 200px;
+    }
+
+    .cuarta img {
+        width: 300px;
+        height: 200px;
+    }
+
+    .quinta img {
+        width: 300px;
+        height: 400px;
+    }
+
+    .sexta img {
+        width: 300px;
+        height: 200px;
+    }
+
+}
+
+
+@media (max-width: 375px) {
+    header {
+        background-color: rgb(240, 215, 251);
+        height: 80px;
+    }
+
+    nav ul li {
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    .logo_principal {
+        width: 80px;
+        margin: 10px;
+    }
+
+    .presentacion img {
+        width: 100px;
+    }
+
+    .frase_homepage {
+        font-size: 12px;
+    }
+
+    .imagenes_index img {
+        width: 300px;
+    }
+
+    .imagenes_index h3 {
+        font-size: smaller;
+        text-align: center;
+    }
+
+    .Descripcion-pelicula {
+        font-size: smaller;
+        text-align: center;
+    }
+
+    .Descripcion-serie {
+        font-size: smaller;
+        text-align: center;
+    }
+
+    .ver-trailer {
+        font-size: x-small;
+        text-align: center;
+    }
+
+    .grid-galeria {
+        display: grid;
+        grid-template-columns: 200px;
+        grid-template-rows: 100px 200px 200px 200px 400px 200px;
+        padding: 25px;
+        justify-items: center;
+        grid-template-areas:
+            "primera primera"
+            "segunda segunda"
+            "tercera tercera"
+            "cuarta cuarta"
+            "quinta quinta"
+            "sexta sexta"
+
+    }
+
+    iframe {
+        width: 300px;
+        height: 200px;
+    }
+
+    .peliculas-entradas p {
+        font-size: smaller;
+    }
+
+    .volver-a {
+        font-size: smaller;
+    }
+}
+
+/* editando el header del bootstrap */
+.container-fluid {
+    background-color: #FBF2DF;
+    padding: 0;
+}
+
+.navbar-brand img {
+    width: 150px;
+    padding: 20px;
+}
+
+.nav-item {padding: 10px;}
+
+.navbar-expand-lg { padding: 0;}
